@@ -1,5 +1,5 @@
 # Assembly_project
- A simple Rock–Paper–Scissors old game built to entertainment little kids and big kids like us 😂 .
+ A simple Rock–Paper–Scissors old game built to entertainment little kids .
 
 Features
 
