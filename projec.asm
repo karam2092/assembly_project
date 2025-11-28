@@ -48,20 +48,20 @@ get_choice:
     cmp cl,3
     ja invalid_choice
 
-    ; ---------- generate computer choice (1..3) ----------
+   
     mov al,rand_num ;0
     inc al ;1
     mov rand_num,al ;1
     mov dl,0
     mov bl,3
-    div bl             ; divide AL by 3: AL=quotient, AH=remainder
+    div bl             
     mov al,ah
-    inc al             ; AL = 1..3
-    mov dl,al          ; DL = computer choice
+    inc al            
+    mov dl,al          ; dL = computer choice
     
   
     
-    ; ---------- compare choices ----------
+    
    cmp cl, dl
    je print_tie
 
@@ -92,7 +92,7 @@ p1_scissors:
     jmp print_comp
 
 
-; ---------- print ----------
+
 print_tie:
     mov ah,09h
     mov dx,offset tieMsg
@@ -135,3 +135,4 @@ exit_prog:
     int 21h
 
 end start
+
